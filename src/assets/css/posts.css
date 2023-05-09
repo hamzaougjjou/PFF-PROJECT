@@ -1,0 +1,149 @@
+
+.post-item-container{
+
+}
+/* =============== post item header styling ================= */
+.post-header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* max-height: 80px; */
+    gap: 10px;
+    align-items: center;
+    /* background-color: rgba(236, 236, 236, 0.5); */
+    border-radius: 10px 10px 0 0;
+}
+
+.post-header-container .profile-container {
+    position: relative;
+}
+
+.post-header-container .profile-container>img {
+    max-height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.post-header-container .profile-container>.online {
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    background-color: rgb(50, 190, 0);
+    border-radius: 50%;
+    right: -5px;
+    top: 50px;
+    border: 2px solid #ececec;
+}
+
+.post-header-container .name-container {
+    margin-bottom: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.post-header-container .name-container>p {
+    font-size: 10px;
+    color: #949494;
+}
+
+.post-header-container .menu-container > .namu-icon {
+    cursor: pointer;
+    width: 40px;
+    margin-bottom: 25px;
+    /* height: 40px; */
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+.post-header-container .menu-container > .namu-icon > p {
+    height: 5px;
+    width: 5px;
+    background-color: rgb(50, 190, 0);
+    margin-top: 3px;
+}
+/* =============== post item body styling ================= */
+.post-body-container .post-images-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.post-body-container .post-images-container img{
+    max-width: calc( 100% - 20px );
+}
+
+/* =============== post item footer styling ================= */
+
+.post-item-footer-container{
+    margin: 20px 0;
+}
+.post-item-footer-container .h-line{
+    height: 1px;
+    width: 100%;
+    margin: 10px auto;
+    background-color: rgba(198, 198, 198, 0.75);
+}
+.post-item-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(235, 235, 255);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.post-item-footer section{
+    text-align: center;
+}
+
+.post-item-footer section i{
+    font-size: 30px;
+    color: #6e6e6e;
+    margin-top: 5px;
+    display: block;
+    width: 120px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 20px auto;
+}
+
+.post-item-footer section i.post-liked{
+    font-size: 30px;
+    color: rgb(255, 31, 31);
+}
+.post-item-footer section i:hover *{
+    border-top-color:red !important;
+}
+.post-item-footer section i:hover{
+    background-color: #fff;
+}
+
+
+/* ====================comments styleing ======================== */
+.comments-container{
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.comments-container .test{
+    margin: 20px;
+    height: 600px;
+    background-color: rgb(13, 255, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.post-item-container *::-webkit-scrollbar {
+    background-color: white;
+    width: 5px;
+}
+
+.post-item-container *::-webkit-scrollbar-thumb {
+    background-color: #E9EDF1;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+

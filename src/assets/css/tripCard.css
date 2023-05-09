@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+.trip-cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-height: 100vh;
+  background-color: #ececec;
+  border-radius: 10px;
+}
+
+.trip-card-item {
+  margin: 20px;
+  margin-top: 60px;
+  height: min-content;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: grid;
+  grid-template-columns: 1fr 2px 150px;
+  min-height: 200px;
+  background-color: rgb(255, 255, 255, 1);
+  width: min-content;
+  max-width: calc( 100% - 10px );
+  border-radius: 5px;
+  position: relative;
+}
+
+.trip-card-item .v-line {
+  background-color: rgb(5, 5, 5);
+  height: 100%;
+  padding: 1.5px;
+}
+
+.trip-card-item .trip-date {
+  height: 40px;
+  width: 200px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  border-radius: 5px 5px 0 0;
+  transform: translateX(-50%);
+  background-color: inherit;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.trip-card-item .location-user-container,
+.trip-card-item .time-container {
+  display: grid;
+  grid-template-rows: 1fr 55px;
+  padding: 5px 10px;
+}
+
+.trip-card-item .location-user-container .location-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.trip-card-item .location-user-container .location-container>div label:first-child,
+.trip-card-item .time-container .time>.start-time p,
+.trip-card-item .time-container .time>.end-time p {
+  color: rgb(0, 0, 0, .8);
+  font-family: "Audiowide", sans-serif;
+  font-weight: bolder;
+  letter-spacing: .5px;
+}
+
+.trip-card-item .location-user-container .location-container>div label:last-child {
+  color: rgb(0, 0, 0, .8);
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-weight: bolder;
+  letter-spacing: .5px;
+}
+
+.trip-card-item .location-user-container .user-container {
+  min-height: 60px;
+}
+
+
+.trip-card-item .location-user-container .user-container .card {
+  height: 50px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0px 2px 0px -1px rgba( 188 125 125 / 40%);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Abel', Arial, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  cursor: pointer;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.trip-card-item .location-user-container .user-container .card .profile-container {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  margin: 2px !important;
+  overflow: hidden;
+}
+
+.trip-card-item .location-user-container .user-container .card .profile-container>img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.trip-card-item .location-user-container .user-container .card .general {
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0rem;
+  padding: 0 1rem;
+}
+.trip-card-item .location-user-container .user-container .card .general .reviews{
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+/* =================================time container ======================== */
+.trip-card-item .time-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.trip-card-item .time-container .time {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.trip-card-item .time-container .time>.start-time,
+.trip-card-item .time-container .time>.end-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 0 5px;
+}
+
+.trip-card-item .time-container .time>.start-time .dot,
+.trip-card-item .time-container .time>.end-time .dot {
+  width: 15px;
+  height: 15px;
+  border: 4px solid black;
+  border-radius: 50%;
+  background-color: rgb(32, 240, 251);
+  position: relative;
+}
+
+.trip-card-item .time-container .time>.dotes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin-left: 7.5px;
+}
+
+.trip-card-item .time-container .time>.dotes>p {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(32, 240, 251);
+  position: relative;
+  z-index: 9;
+}
+
+.trip-card-item .time-container .time>.start-time .dot::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  display: block;
+  top: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(138, 138, 138);
+  z-index: 1;
+}
+
+/* ===========================trip buttons================= */
+.trip-card-item .trip-btns {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  right: 0;
+  border-radius: 0 5px 5px 0;
+  z-index: 999;
+  background-color: rgba(61, 195, 253, 0.5);
+  animation-duration: .5s;
+}
+
+.trip-card-item .trip-btns .btn-join{
+  position: absolute;
+  top: 50%;
+  transform: translate(50% , -50%);
+  right: 50%;
+  border-radius: 5px;
+  width: calc( 100% - 10px );
+  background-color: rgb(0, 150, 75);
+  opacity: .9;
+}
+.trip-card-item .trip-btns .btn-join:hover{
+  background-color: rgb(0, 150, 75);
+  opacity: 1;
+}
+
+.trip-card-item:hover .trip-btns {
+  animation-name: tripBtnsAnimation;
+  top: 0;
+}
+
+@keyframes tripBtnsAnimation {
+  from {
+    top: 100%;
+    width: 0;
+  }
+
+  to {
+    top: 0;
+    width: 160px;
+  }
+}

@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app-container{
+    max-width: 1520px;
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px solid #eff2f5;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.App-header {
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.App-header h1 {
+    margin: 0;
+}
+
+.App-header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.App-header nav li {
+    margin-right: 1rem;
+}
+
+.App-header nav li:last-child {
+    margin-right: 0;
+}
+
+.App-header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.App-content {
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.App-content h2 {
+    margin-top: 0;
+}
+
+.App-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form styling */
+.App-content form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.App-content form input[type="text"] {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.App-content form button {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+/* Footer */
+.App-footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+
+/* Search section */
+.search-container {
+    display: flex;
+    margin-top: 2rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.search-container button {
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1rem;
+}

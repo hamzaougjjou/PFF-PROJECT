@@ -1,0 +1,41 @@
+.main-box {
+    border: 1px solid #eff2f5;
+    padding: 29.250px;
+    padding-bottom: 0px;
+    margin-bottom: 35px;
+    box-shadow: 0px 0px 3px 0px #ffffff;
+    border-radius: 0.475rem;
+    -webkit-border-radius: 0.475rem;
+    -moz-border-radius: 0.475rem;
+    -ms-border-radius: 0.475rem;
+    -o-border-radius: 0.475rem;
+}
+
+.btn {
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.txt-center{
+    text-align: center;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.w-full{
+    width: 100%;
+}
+
+.p-5{
+    padding: 5px;
+}
+.m-5{
+    margin: 5px;
+}
+.m-10{
+    margin: 10px;
+}
